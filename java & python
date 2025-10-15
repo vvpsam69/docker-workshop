@@ -29,3 +29,12 @@ creating image- docker build -t dippy .
 
 
 creating containers for the image- docker run --name dippy1 dippy
+
+
+docker tag 9f060979e966 samarthasm01/mobapp:1.1
+
+docker push docker.io/samarthasm01/mobapp:1.1
+
+docker pull anilkumarbh/mobapp:1.1
+
+docker run --name anil1 anilkumarbh/mobapp:1.1
