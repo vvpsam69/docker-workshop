@@ -1,0 +1,31 @@
+Sample.java
+
+public class Sample {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+dockerfile
+
+FROM openjdk
+WORKDIR /app
+COPY . /app
+RUN ["javac","Sample.java"]
+CMD ["java","Sample"]
+
+
+creating image- docker build -t dipapp .
+
+creating containers for the image- docker run --name dipcon1 dipapp
+
+
+
+
+PYTHON
+
+creating image- docker build -t dippy .
+
+
+creating containers for the image- docker run --name dippy1 dippy
